@@ -9,8 +9,7 @@
 
   <div class="container" *ngIf="results.length > 0">
     <div class="article" *ngFor="let article of results">
-      <p id="title">{{ article.title }}</p>
-      <img [src]="article.urlToImage" />
+      <h6 id="title">{{ article.title }}</h6>
       <p id="description">{{ article.content }}</p>
     </div>
   </div>

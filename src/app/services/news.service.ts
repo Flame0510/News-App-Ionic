@@ -10,11 +10,11 @@ export class NewsService {
 
   getNews = () =>
     this.http.get(
-      'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=d0857d20b63e4c5396b47ab2b2d806f5'
+      'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=64087bbc6a1446f1a2bfb6cf8b0da73d'
     );
 
   search = (q: string) =>
     this.http.get(
-      `https://newsapi.org/v2/everything?q=${q}&language=it&sortBy=publishedAt&apiKey=d0857d20b63e4c5396b47ab2b2d806f5`
+      `https://newsapi.org/v2/everything?q=${q}&language=it&sortBy=publishedAt&apiKey=64087bbc6a1446f1a2bfb6cf8b0da73d`
     );
 }

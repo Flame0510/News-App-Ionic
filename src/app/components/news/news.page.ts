@@ -1,15 +1,15 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActionSheetController } from '@ionic/angular';
-import { NewsService } from '../services/news.service';
+import { NewsService } from '../../services/news.service';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss'],
+  selector: 'app-news',
+  templateUrl: 'news.page.html',
+  styleUrls: ['news.page.scss'],
 })
-export class Tab1Page implements OnInit {
+export class NewsPage implements OnInit {
   news: any;
-  modalVisibility: boolean = true;
+  modalVisibility: boolean = false;
 
   @ViewChild('title') title: any;
   @ViewChild('description') description: any;
