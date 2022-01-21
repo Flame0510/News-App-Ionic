@@ -1,0 +1,49 @@
+ion-content {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.container .article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px 0;
+  color: #000;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.container .article p {
+  width: 100%;
+  text-align: left;
+}
+
+.container .article #title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container .article #description {
+  display: block;
+  margin-bottom: 0;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container .article img {
+  width: 100%;
+}

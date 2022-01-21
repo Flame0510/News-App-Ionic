@@ -1,0 +1,90 @@
+ion-modal {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  background: #1c1c1c;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+ion-modal .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ion-modal .modal .modalContent {
+  width: 90%;
+}
+
+ion-modal .modal .modalContent .modalBottomBar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+ion-modal .modal .modalContent .modalBottomBar #addBtn,
+ion-modal .modal .modalContent .modalBottomBar #cancelBtn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container #addNewsBtn {
+  width: 90%;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.container .article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px 0;
+  color: #000;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.container .article p {
+  width: 100%;
+  text-align: left;
+}
+
+.container .article #title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container .article #description {
+  display: block;
+  margin-bottom: 0;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container .article img {
+  width: 100%;
+}
+
+.container .article #deleteBtn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}

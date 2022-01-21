@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Search </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar (ionChange)="search($event)"></ion-searchbar>
+
+  <div class="container" *ngIf="results.length > 0">
+    <div class="article" *ngFor="let article of results">
+      <p id="title">{{ article.title }}</p>
+      <img [src]="article.urlToImage" />
+      <p id="description">{{ article.content }}</p>
+    </div>
+  </div>
+</ion-content>

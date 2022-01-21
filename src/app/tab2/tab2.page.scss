@@ -1,0 +1,56 @@
+ion-content {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height:calc(100% - 60px);
+
+  overflow-y: auto;
+
+  .article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 90%;
+    margin: 20px 0;
+
+    color: #000;
+    background: #fff;
+
+    padding: 20px;
+    border-radius: 6px;
+
+    p {
+      width: 100%;
+      text-align: left;
+    }
+
+    #title {
+      margin-top: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    #description {
+      display: block;
+      margin-bottom: 0;
+
+      font-size: 12px;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

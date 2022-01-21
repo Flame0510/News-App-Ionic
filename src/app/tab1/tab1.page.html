@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> News </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-modal [isOpen]="modalVisibility">
+    <ng-template>
+      <div class="modal">
+        <div class="modalContent">
+          <h2 id="modalTitle">Add News</h2>
+          <ion-input placeholder="Title" #title></ion-input>
+          <ion-input placeholder="Description" #description></ion-input>
+          <ion-input placeholder="Image URL" #imageUrl></ion-input>
+          <div class="modalBottomBar">
+            <button id="addBtn" (click)="addNews()">Add</button>
+            <button id="cancelBtn" (click)="toggleModal()">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ion-modal>
+
+  <ion-action-sheet></ion-action-sheet>
+
+  <div class="container">
+    <button id="addNewsBtn" (click)="toggleModal()">Add News</button>
+    <div class="article" *ngFor="let article of news, index as articleKey">
+      <p id="title">{{ article.title }}</p>
+      <img [src]="article.urlToImage" />
+      <p id="description">{{ article.content }}</p>
+      <button id="deleteBtn" (click)="presentActionSheet(articleKey)">Delete</button>
+    </div>
+  </div>
+</ion-content>
